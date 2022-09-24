@@ -6,4 +6,3 @@ _In order summary component, I have built only one component of summary page usi
 Technologies used
 - HTML5
 - CSS
-
