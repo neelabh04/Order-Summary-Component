@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* This will be applied to all the element inside the page first */
+* {
+    margin: 0;
+    padding: 0;
+    /* when determining the height and width of this div simply account for the padding */
+    box-sizing: border-box;
+}
+
 :root {
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
@@ -11,11 +20,66 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--pale-blue);
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
 }
 
 .card {
     width: 450px;
     background-color: white;
     /* specifies the text color */
-    color: var(--desaturated-blue); 
+    color: var(--desaturated-blue);
+    border-radius: 20px; 
+    overflow: hidden;
+}
+
+.title {
+    color: var(--dark-blue);
+    font: 900;
+    font-size: 32px;
+}
+
+.hero-image {
+    /* this will make sure that the width is 100% of its parent div */
+    width: 100%;
+}
+
+.container {
+    padding: 30px;
+}
+
+/* here we mean all the children inside this container, they will all get this margin with this value */
+.container > * {
+    /* top and down -> 13px margin */
+    /* left and right -> 0px margin */
+    margin: 13px 0px;
+}
+.order-description {
+    line-height: 25px;
+}
+
+.proceed-button {
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
+
+    /* this is done to make sure that we don't inherit our parent's div property */
+    /* CSS Specificity */
+    width: 100%;
+
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 12px;
+}
+
+.proceed-button:hover {
+    opacity: 0.8;
+}
+
+.cancel-button {
+    b
 }
