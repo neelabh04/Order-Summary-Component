@@ -59,21 +59,30 @@ body {
     line-height: 25px;
 }
 
-.proceed-button {
-    background-color: var(--bright-blue);
-    padding: 1rem 0;
-    color: white;
-    box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
-
+.plan-container {
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+}
+/* Since we have only 2 button tag in our page we used this which ensure all the buttons must have same property */
+button {
     /* this is done to make sure that we don't inherit our parent's div property */
     /* CSS Specificity */
     width: 100%;
 
     border: none;
     font-weight: 700;
-    cursor: pointer;
     font-size: 0.9rem;
     border-radius: 12px;
+    cursor: pointer;
+}
+
+.proceed-button {
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
 }
 
 .proceed-button:hover {
@@ -81,5 +90,11 @@ body {
 }
 
 .cancel-button {
-    b
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin-top: 22px;
+}
+
+.cancel-button:hover {
+    color: black;
 }
